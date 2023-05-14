@@ -1,0 +1,127 @@
+body {
+    font-family: 'poppins', sans-serif;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: rgb(255, 252, 252);
+    color: #000000;
+}
+
+body.modo-escuro {
+    background-color: #1f1f1f;
+    color: #fdfdfd;
+}
+
+header {
+
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+header .logo,
+header .imagem-botao {
+    width: 50px;
+    transition: 0.2s ease-in-out;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+header .logo {
+    width: 120px;
+    transition: 0.2s ease-in-out;
+
+    justify-content: center;
+}
+
+header .imagem-botao {
+    width: 30px;
+}
+
+header #botao-alterar-tema {
+    background-color: none;
+    border: none;
+    cursor: pointer;
+    background: none;
+
+
+}
+
+header .logo:hover,
+header .imagem-botao:hover,
+main .cartao-sf:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+main {
+
+    padding: 25px;
+}
+
+main .listagem-sf {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+main .cartao-sf {
+    background-color: rgb(255, 230, 230);
+    width: 250px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 20px;
+    transition: 0.2s ease-in-out;
+}
+
+main .cartao-sf:hover {
+    background-color: #ff7b7b;
+
+}
+
+.modo-escuro .cartao-sf {
+    background-color: #99979785;
+
+}
+
+main .cartao-sf .informacoes {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #333333;
+    border-radius: 10px;
+}
+
+main .cartao-sf .informacoes span {
+
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+main .cartao-sf .gif {
+    width: 150px;
+    height: 190px;
+}
+
+main .cartao-sf .bandeira {
+    width: 70px;
+    height: 50px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 10px;
+    transition: 0.2s ease-in-out;
+    justify-content: space-between;
+}
+
+main .descricao {
+    max-height: 80px;
+    overflow-y: hidden;
+    font-size: 15px;
+    padding-right: 10px;
+}
